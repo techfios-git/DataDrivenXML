@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="functional_test_data">
+	<test name="LoginTest">
+		<parameter name="userName" value="techfiosdemo@gmail.com" />
+		<parameter name="password" value="abc123" />
+		<parameter name="fullName" value="Microsoft Excell" />
+		<parameter name="CompanyName" value="MS Office" />
+		<parameter name="email" value="msexcell@gmail.com" />
+		<parameter name="phone" value="231546" />
+		<parameter name="address" value="Techfios Building" />
+		<parameter name="city" value="Carrolton" />
+		<parameter name="state" value="TX" />
+		<parameter name="zip" value="75009" />
+		
+		
+
+		<classes>
+			<class name="test.LoginTest" />		<!-- to inject date to test pages -->
+			<class name="test.AddContactTest" />
+		</classes>
+
+	</test>
+
+</suite>

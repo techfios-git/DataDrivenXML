@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [functional_test_data]">
+  <test name="LoginTest(failed)">
+    <parameter name="zip" value="75009"/>
+    <parameter name="CompanyName" value="MS Office"/>
+    <parameter name="password" value="abc123"/>
+    <parameter name="address" value="Techfios Building"/>
+    <parameter name="phone" value="231546"/>
+    <parameter name="city" value="Carrolton"/>
+    <parameter name="fullName" value="Microsoft Excell"/>
+    <parameter name="state" value="TX"/>
+    <parameter name="userName" value="techfiosdemo@gmail.com"/>
+    <parameter name="email" value="msexcell@gmail.com"/>
+    <classes>
+      <class name="test.AddContactTest">
+        <methods>
+          <include name="userShouldBeAbleUseSearchBarOfListContact" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.AddContactTest -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
+</suite> <!-- Failed suite [functional_test_data] -->
