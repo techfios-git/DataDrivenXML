@@ -3,13 +3,13 @@
 	<test name="LoginTest">
 		<parameter name="userName" value="techfiosdemo@gmail.com" />
 		<parameter name="password" value="abc123" />
-		<parameter name="fullName" value="Microsoft Excell" />
-		<parameter name="CompanyName" value="MS Office" />
+		<parameter name="fullName" value="COVID_Vaccine" />
+		<parameter name="CompanyName" value="BEXIMCO" />
 		<parameter name="email" value="msexcell@gmail.com" />
 		<parameter name="phone" value="231546" />
-		<parameter name="address" value="Techfios Building" />
-		<parameter name="city" value="Carrolton" />
-		<parameter name="state" value="TX" />
+		<parameter name="address" value="Dhaka Building" />
+		<parameter name="city" value="Dhaka" />
+		<parameter name="state" value="BD" />
 		<parameter name="zip" value="75009" />
 		
 		

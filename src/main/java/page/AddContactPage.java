@@ -57,7 +57,8 @@ public class AddContactPage extends BasePage {
 
 	String enterName;
 
-	public void fullNameField(String fullName) {
+	public void fullNameField(String fullName) throws InterruptedException {
+		Thread.sleep(3000);
 		enterName = fullName + BasePage.randomNumGenerator();
 		Full_NAME_FIELD_LOCATOR.sendKeys(enterName);
 	}
@@ -129,14 +130,21 @@ public class AddContactPage extends BasePage {
 	//tbody/tr[1]/td[2]//following-sibling::td[4]/a[2]
 	public void listContactViewButtonTest() throws InterruptedException {
 		for (int i = 1; i <= 10; i++) {
+			Thread.sleep(3000);
 			String name = driver.findElement(By.xpath(before_xpath + i + after_xpath)).getText();
-			System.out.println(name);
+			Thread.sleep(3000);
+			//System.out.println(name);
 			if (name.contains(enterName)) {
 				System.out.println("Entered name exists.");
-				driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[2]//following-sibling::td[4]/a[1]")).click();
+//				driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[2]//following-sibling::td[4]/a[1]")).click();
+//				Thread.sleep(2000);
 				Thread.sleep(2000);
-				
-			}
+				driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[6]/a[1]")).click();
+				Thread.sleep(5000);
+				i=11;
+				LIST_CONTACTS_FIELD_LOCATOR.click();
+					
+					}
 
 		}
 	}

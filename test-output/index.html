@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -23,8 +24,9 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-functional_test_data">
-              <span class="suite-name border-failed">functional_test_data</span>
+              <span class="suite-name border-passed">functional_test_data</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-functional_test_data">
-                    <span>C:\Users\Dell\Winter2020Selenium\DataDrivenXML\data\functional_test_data.xml</span>
+                    <span>C:\Users\14693\eclipse-workspace-GitProject-Shihab\DataDrivenXML\data\functional_test_data.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-functional_test_data" class="hide-methods failed suite-functional_test_data"> (hide)</a> <!-- hide-methods failed suite-functional_test_data -->
-                      <a href="#" panel-name="suite-functional_test_data" class="show-methods failed suite-functional_test_data"> (show)</a> <!-- show-methods failed suite-functional_test_data -->
-                    </span>
-                    <div class="method-list-content failed suite-functional_test_data">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-functional_test_data" title="test.AddContactTest" hash-for-method="userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...)">userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-functional_test_data -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +104,12 @@
                     <div class="method-list-content passed suite-functional_test_data">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-functional_test_data" title="test.AddContactTest" hash-for-method="userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...)">userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-functional_test_data" title="test.AddContactTest" hash-for-method="userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...)">userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-functional_test_data" title="test.AddContactTest" hash-for-method="userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...)">userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -136,49 +129,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-functional_test_data" class="panel functional_test_data">
-          <div class="suite-functional_test_data-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">test.AddContactTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...)">
-                  </a> <!-- userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...) -->
-                  <span class="method-name">userShouldBeAbleUseSearchBarOfListContact</span>
-                  <span class="parameters">(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Building, Carrolton, TX, 75009)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//tbody/tr[2]/td[2]&quot;}
-  (Session info: chrome=74.0.3729.157)
-  (Driver info: chromedriver=74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29}),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-N308L1J&apos;, ip: &apos;192.168.1.185&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_221&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 74.0.3729.6 (255758eccf3d24..., userDataDir: C:\Users\Dell\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:58916}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 74.0.3729.157, webStorageEnabled: true}
-Session ID: a0ef266830955e4ee7d76a0e09caf17b
-*** Element info: {Using=xpath, value=//tbody/tr[2]/td[2]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at page.AddContactPage.listContactViewButtonTest(AddContactPage.java:132)
-	at test.AddContactTest.userShouldBeAbleUseSearchBarOfListContact(AddContactTest.java:85)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-functional_test_data-class-failed -->
           <div class="suite-functional_test_data-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -187,10 +137,18 @@ Session ID: a0ef266830955e4ee7d76a0e09caf17b
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...)">
-                  </a> <!-- userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...) -->
+                  <a name="userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...)">
+                  </a> <!-- userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...) -->
                   <span class="method-name">userShouldBeAbleAddContact</span>
-                  <span class="parameters">(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Building, Carrolton, TX, 75009)</span>
+                  <span class="parameters">(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, Dhaka, BD, 75009)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...)">
+                  </a> <!-- userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...) -->
+                  <span class="method-name">userShouldBeAbleUseSearchBarOfListContact</span>
+                  <span class="parameters">(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, Dhaka, BD, 75009)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -214,22 +172,22 @@ Session ID: a0ef266830955e4ee7d76a0e09caf17b
         </div> <!-- panel functional_test_data -->
         <div panel-name="test-xml-functional_test_data" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell\Winter2020Selenium\DataDrivenXML\data\functional_test_data.xml</span>
+            <span class="header-content">C:\Users\14693\eclipse-workspace-GitProject-Shihab\DataDrivenXML\data\functional_test_data.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;functional_test_data&quot;&gt;
-  &lt;test name=&quot;LoginTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;LoginTest&quot;&gt;
     &lt;parameter name=&quot;zip&quot; value=&quot;75009&quot;/&gt;
-    &lt;parameter name=&quot;CompanyName&quot; value=&quot;MS Office&quot;/&gt;
+    &lt;parameter name=&quot;CompanyName&quot; value=&quot;BEXIMCO&quot;/&gt;
     &lt;parameter name=&quot;password&quot; value=&quot;abc123&quot;/&gt;
-    &lt;parameter name=&quot;address&quot; value=&quot;Techfios Building&quot;/&gt;
+    &lt;parameter name=&quot;address&quot; value=&quot;Dhaka Building&quot;/&gt;
     &lt;parameter name=&quot;phone&quot; value=&quot;231546&quot;/&gt;
-    &lt;parameter name=&quot;city&quot; value=&quot;Carrolton&quot;/&gt;
-    &lt;parameter name=&quot;fullName&quot; value=&quot;Microsoft Excell&quot;/&gt;
-    &lt;parameter name=&quot;state&quot; value=&quot;TX&quot;/&gt;
+    &lt;parameter name=&quot;city&quot; value=&quot;Dhaka&quot;/&gt;
+    &lt;parameter name=&quot;fullName&quot; value=&quot;COVID_Vaccine&quot;/&gt;
+    &lt;parameter name=&quot;state&quot; value=&quot;BD&quot;/&gt;
     &lt;parameter name=&quot;userName&quot; value=&quot;techfiosdemo@gmail.com&quot;/&gt;
     &lt;parameter name=&quot;email&quot; value=&quot;msexcell@gmail.com&quot;/&gt;
     &lt;classes&gt;
@@ -278,15 +236,15 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'userShouldBeAbleUseSearchBarOfListContact')
 data.setCell(0, 2, 'test.AddContactTest')
-data.setCell(0, 3, 39518);
+data.setCell(0, 3, 35723);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'userShouldBeAbleAddContact')
 data.setCell(1, 2, 'test.AddContactTest')
-data.setCell(1, 3, 31095);
+data.setCell(1, 3, 25808);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validUserShouldBeAbleToLogin')
 data.setCell(2, 2, 'test.LoginTest')
-data.setCell(2, 3, 15545);
+data.setCell(2, 3, 9762);
 window.suiteTableData['functional_test_data']= { tableData: data, tableDiv: 'times-div-functional_test_data'}
 return data;
 }
@@ -326,18 +284,17 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">test.AddContactTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...)</span>
-                <span class="method-start">15553 ms</span>
+                <span class="method-name">userShouldBeAbleAddContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...)</span>
+                <span class="method-start">9772 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, Microsoft Excell, MS Office, msexcell@gmail.com, 231546, Techfios Bu...)</span>
-                <span class="method-start">46651 ms</span>
+                <span class="method-name">userShouldBeAbleUseSearchBarOfListContact(techfiosdemo@gmail.com, abc123, COVID_Vaccine, BEXIMCO, msexcell@gmail.com, 231546, Dhaka Building, ...)</span>
+                <span class="method-start">35585 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

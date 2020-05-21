@@ -86,7 +86,7 @@ WebDriver driver;
 		
 		
 		
-		//BrowserFactory.tearDown();
+		BrowserFactory.tearDown();
 		
 	}
 
