@@ -130,19 +130,17 @@ public class AddContactPage extends BasePage {
 	//tbody/tr[1]/td[2]//following-sibling::td[4]/a[2]
 	public void listContactViewButtonTest() throws InterruptedException {
 		for (int i = 1; i <= 10; i++) {
-			Thread.sleep(3000);
+			//Thread.sleep(3000); 
 			String name = driver.findElement(By.xpath(before_xpath + i + after_xpath)).getText();
-			Thread.sleep(3000);
+			//Thread.sleep(3000);
 			//System.out.println(name);
 			if (name.contains(enterName)) {
 				System.out.println("Entered name exists.");
-//				driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[2]//following-sibling::td[4]/a[1]")).click();
-//				Thread.sleep(2000);
 				Thread.sleep(2000);
 				driver.findElement(By.xpath("//tbody/tr[" + i + "]/td[6]/a[1]")).click();
 				Thread.sleep(5000);
-				i=11;
-				LIST_CONTACTS_FIELD_LOCATOR.click();
+				//i=11; //not required still adding to end the loop as the dynamic table is not available on Contact View page
+				LIST_CONTACTS_FIELD_LOCATOR.click(); //going back to List Contacts page
 					
 					}
 

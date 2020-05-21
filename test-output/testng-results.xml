@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="functional_test_data" duration-ms="71342" started-at="2020-05-21T01:07:55 CDT" finished-at="2020-05-21T01:09:06 CDT">
+  <suite name="functional_test_data" duration-ms="64855" started-at="2020-05-21T09:53:25 CDT" finished-at="2020-05-21T09:54:30 CDT">
     <groups>
     </groups>
-    <test name="LoginTest" duration-ms="71342" started-at="2020-05-21T01:07:55 CDT" finished-at="2020-05-21T01:09:06 CDT">
+    <test name="LoginTest" duration-ms="64855" started-at="2020-05-21T09:53:25 CDT" finished-at="2020-05-21T09:54:30 CDT">
       <class name="test.LoginTest">
-        <test-method status="PASS" signature="validUserShouldBeAbleToLogin(java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@32709393]" name="validUserShouldBeAbleToLogin" duration-ms="9762" started-at="2020-05-21T01:07:55 CDT" finished-at="2020-05-21T01:08:04 CDT">
+        <test-method status="PASS" signature="validUserShouldBeAbleToLogin(java.lang.String, java.lang.String)[pri:0, instance:test.LoginTest@32709393]" name="validUserShouldBeAbleToLogin" duration-ms="9396" started-at="2020-05-21T09:53:25 CDT" finished-at="2020-05-21T09:53:34 CDT">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
         </test-method> <!-- validUserShouldBeAbleToLogin -->
       </class> <!-- test.LoginTest -->
       <class name="test.AddContactTest">
-        <test-method status="PASS" signature="userShouldBeAbleAddContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.AddContactTest@3d99d22e]" name="userShouldBeAbleAddContact" duration-ms="25808" started-at="2020-05-21T01:08:04 CDT" finished-at="2020-05-21T01:08:30 CDT">
+        <test-method status="PASS" signature="userShouldBeAbleAddContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:test.AddContactTest@3d99d22e]" name="userShouldBeAbleAddContact" duration-ms="26009" started-at="2020-05-21T09:53:34 CDT" finished-at="2020-05-21T09:54:00 CDT">
           <params>
             <param index="0">
               <value>
@@ -81,7 +81,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userShouldBeAbleAddContact -->
-        <test-method status="PASS" signature="userShouldBeAbleUseSearchBarOfListContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:test.AddContactTest@3d99d22e]" name="userShouldBeAbleUseSearchBarOfListContact" duration-ms="35723" started-at="2020-05-21T01:08:30 CDT" finished-at="2020-05-21T01:09:06 CDT">
+        <test-method status="PASS" signature="userShouldBeAbleUseSearchBarOfListContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:test.AddContactTest@3d99d22e]" name="userShouldBeAbleUseSearchBarOfListContact" duration-ms="29402" started-at="2020-05-21T09:54:00 CDT" finished-at="2020-05-21T09:54:30 CDT">
           <params>
             <param index="0">
               <value>
